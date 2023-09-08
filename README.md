@@ -16,7 +16,7 @@ mvn clean package
 Execute the JAR file. Example below:
 
 ```
-java -jar target/postgresql-jdbc-tester-1.0.jar "db_user" "db_passs" "jdbc:postgresql://mydb.postgres.database.azure.com:1234/databaseName"
+java -jar target/postgresql-jdbc-tester-1.0.jar "db_user" "db_pass" "jdbc:postgresql://mydb.postgres.database.azure.com:1234/databaseName"
 ```
 
 > *Security Tip*: A good practice is to read the JDBC string into a variable using the `read` command in Linux to prevent DB credentials in JDBC string to be logged in bash history.
