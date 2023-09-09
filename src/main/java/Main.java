@@ -15,7 +15,7 @@ public class Main {
         BasicConfigurator.configure();
 
         if (args.length != 3) {
-            LOG.info("Invalid number of arguments: Must provide JDBC string to test as argument");
+            LOG.info("Invalid number of arguments: Must provide 3 arguments to the program.");
             return;
         }
 
@@ -23,9 +23,7 @@ public class Main {
         String password = args[1];
         String jdbcString = args[2];
         
-        System.out.println("Username is: " + username);
-        System.out.println("jdbcString is: " + jdbcString);
-        
+    
         Class.forName("org.postgresql.Driver");
 
         System.out.println("\n##### Starting JDBC connection test. Test ID: " + java.util.UUID.randomUUID() + "\n");
@@ -39,8 +37,8 @@ public class Main {
 
              
             if (resultSet.next()) {
-                LOG.info("Connection established!! \n" +
-                        "Result of Query: " + resultSet.getString(1) + "\n");
+                LOG.info("Database connection successful!!");
+                LOG.info("Result of Query: " + resultSet.getString(1) );
             }
 
             statement.close();
