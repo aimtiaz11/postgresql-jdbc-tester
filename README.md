@@ -7,7 +7,7 @@ A simple Spring Boot command line application to test JDBC connection to Postgre
 
 ## How to run
 
-Download the JAR from [release](https://github.com/aimtiaz11/postgresql-jdbc-tester/releases/tag/1.0) page or alternatively checkout the code from this repository and run:
+Download the JAR from [release](https://github.com/aimtiaz11/postgresql-jdbc-tester/releases/tag/v1.0.0) page or alternatively checkout the code from this repository and run:
 
 ```
 mvn clean package
